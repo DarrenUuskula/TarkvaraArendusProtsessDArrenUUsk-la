@@ -1,88 +1,53 @@
-#test{
+#test {
     font-family: 'Comic Sans MS';
-    color: rgb(73, 136, 204);
+    color: white;
 }
-
-.stylebutton1 {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 1s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+body{
+    color: white ;
 }
-
-.stylebutton2 {
-    -webkit-animation: bgcolor2 20s infinite;
-    animation: bgcolor2 1s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
 #linkcolor{
-    animation: textcolor 1s infinite;
+    color: white;
 }
 
-#wiplinkcolor{
-    color:gold;
+#whiteoutline {
+    font-size:xx-large;
 }
 
-p{
-    
-    font-family: 'Comic Sans MS';
-    animation: textcolor 1s infinite;
+#whiteinline {
+  font-size: medium;
 }
 
-ul{
-    
-    font-family: 'Comic Sans MS';
-    animation: textcolor 1s infinite;
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+    background: rgb(19,106,236);
+    background: radial-gradient(circle, rgba(19,106,236,1) 0%, rgba(40,19,236,1) 35%, rgba(19,215,236,1) 100%);       background-size: 120% 100%;
+      animation: gradient 180s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+#Waterfall1Text {
+    font-weight: bold;
 }
 
-@keyframes textcolor {
-  0% { color: black; }
-  50% { color: white; }
-  100% { color: black; }
+#linkcolor {
+    color: #2c5282; /* Dark blue color */
 }
 
-@keyframes bgcolor {
-    0% {
-        background-color: white
-    }
-
-    50% {
-        background-color: black
-    }
-
-    100% {
-        background-color: white
-    }
-}
-
-@keyframes bgcolor2 {
-    0% {
-        background-color: rgb(2, 2, 82)
-    }
-
-    25% {
-        background-color: rgb(65, 38, 176)
-    }
-
-    50% {
-        background-color: rgb(23, 47, 200)
-    }
-
-    75% {
-        background-color: rgb(23, 115, 169)
-    }
-
-    100% {
-        background-color: lightcyan
-    }
+#textcolor {
+    color: #404040;
 }
