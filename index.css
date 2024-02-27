@@ -1,0 +1,88 @@
+#test{
+    font-family: 'Comic Sans MS';
+    color: rgb(73, 136, 204);
+}
+
+.stylebutton1 {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.stylebutton2 {
+    -webkit-animation: bgcolor2 20s infinite;
+    animation: bgcolor2 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#linkcolor{
+    animation: textcolor 1s infinite;
+}
+
+#wiplinkcolor{
+    color:gold;
+}
+
+p{
+    
+    font-family: 'Comic Sans MS';
+    animation: textcolor 1s infinite;
+}
+
+ul{
+    
+    font-family: 'Comic Sans MS';
+    animation: textcolor 1s infinite;
+}
+
+@keyframes textcolor {
+  0% { color: black; }
+  50% { color: white; }
+  100% { color: black; }
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: white
+    }
+
+    50% {
+        background-color: black
+    }
+
+    100% {
+        background-color: white
+    }
+}
+
+@keyframes bgcolor2 {
+    0% {
+        background-color: rgb(2, 2, 82)
+    }
+
+    25% {
+        background-color: rgb(65, 38, 176)
+    }
+
+    50% {
+        background-color: rgb(23, 47, 200)
+    }
+
+    75% {
+        background-color: rgb(23, 115, 169)
+    }
+
+    100% {
+        background-color: lightcyan
+    }
+}
